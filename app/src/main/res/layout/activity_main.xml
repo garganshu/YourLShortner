@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.urlshortenerapp.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YOUR LONG URL "
+        android:textSize="30sp"/>
+    <EditText
+        android:id="@+id/urlid"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="url"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:textColor="@color/White"
+        android:onClick="submit"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+    <TextView
+        android:id="@+id/your"
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR SHORT URL"
+        android:textSize="30sp"
+        android:visibility="gone"/>
+    <EditText
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/shorturlid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INVALID URL ENTERED"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/link"
+        android:onClick="open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Short Url"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@color/White"
+        android:visibility="gone"/>
+</LinearLayout>
